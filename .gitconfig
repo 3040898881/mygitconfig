@@ -1,0 +1,11 @@
+[user]
+	email = xxx@sina.com
+	name = xxx
+[alias]
+	st = status
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset-%C(yellow)%d%Creset%s%Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+[merge]
+    tool = meld
+	conflictstyle = diff3
+[mergetool "meld"]
+        cmd = meld $LOCAL $BASE $REMOTE --output=$MERGED --auto-merge
